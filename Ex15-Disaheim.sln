@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex15-Disaheim", "Ex15-Disaheim\Ex15-Disaheim.csproj", "{8430D6BC-29C5-4825-9235-3554A73FCCDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_Ex15-Disaheim", "UnitTest_Ex15-Disaheim\UnitTest_Ex15-Disaheim.csproj", "{FA9D2BE1-2619-4440-A4EE-85AF0F3D1C43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8430D6BC-29C5-4825-9235-3554A73FCCDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8430D6BC-29C5-4825-9235-3554A73FCCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8430D6BC-29C5-4825-9235-3554A73FCCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8430D6BC-29C5-4825-9235-3554A73FCCDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9D2BE1-2619-4440-A4EE-85AF0F3D1C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9D2BE1-2619-4440-A4EE-85AF0F3D1C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9D2BE1-2619-4440-A4EE-85AF0F3D1C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9D2BE1-2619-4440-A4EE-85AF0F3D1C43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B37CDC2C-A6F4-41CB-8D5E-13E8772E8976}
+	EndGlobalSection
+EndGlobal

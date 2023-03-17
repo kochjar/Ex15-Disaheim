@@ -18,8 +18,20 @@
 
             Controller controller = new Controller();
 
-            
-            
+            Course c1, c2, c3;
+
+            c1 = new Course("Spådomskunst for nybegyndere");
+
+            c2 = new Course("Magi – når videnskaben stopper", 157);
+
+            c3 = new Course("Et indblik i Helleristning", 180);
+
+            Console.WriteLine(c1);
+            Console.WriteLine(c2);
+            Console.WriteLine(c3);
+
+
+
             controller.AddToList(b3);/*
             controller.AddToList(b2);
             controller.AddToList(b3);

@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ex15_Disaheim
 {
-    public class Amulet
+    public class Amulet : Merchandise
     {
-        public string ItemId { get; set; }
         public Level Quality { get; set; }
         public string Design { get; set; }
         

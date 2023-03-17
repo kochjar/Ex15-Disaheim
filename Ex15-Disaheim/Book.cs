@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ex15_Disaheim
 {
-    public class Book
+    public class Book : Merchandise
     {
-        public string ItemId {get;set;}
         public string Title { get; set; }
         public double Price { get; set; }
 
-        public Book(string itemId, string title, double price) 
+        public Book(string itemId, string title, double price)
         {
             this.ItemId = itemId;
             this.Title = title;

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex15-Disaheim", "Ex15-Disaheim\Ex15-Disaheim.csproj", "{8430D6BC-29C5-4825-9235-3554A73FCCDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex15-Disaheim", "Ex15-Disaheim\Ex15-Disaheim.csproj", "{8430D6BC-29C5-4825-9235-3554A73FCCDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_Ex15-Disaheim", "UnitTest_Ex15-Disaheim\UnitTest_Ex15-Disaheim.csproj", "{FA9D2BE1-2619-4440-A4EE-85AF0F3D1C43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest_Ex15-Disaheim", "UnitTest_Ex15-Disaheim\UnitTest_Ex15-Disaheim.csproj", "{FA9D2BE1-2619-4440-A4EE-85AF0F3D1C43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

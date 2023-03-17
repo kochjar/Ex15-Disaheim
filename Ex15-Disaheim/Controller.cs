@@ -16,7 +16,8 @@ namespace Ex15_Disaheim
             Amulets = new List<Amulet>();
         }
 
-        public void AddToList(Book book) {
+        public void AddToList(Book book)
+        {
             Books.Add(book);
         }
 

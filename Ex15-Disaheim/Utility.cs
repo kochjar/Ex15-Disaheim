@@ -28,5 +28,18 @@ namespace Ex15_Disaheim
             }
         }
 
+        public double GetValueOfCourse(Course course)
+        {
+            if (course == null) { return 0; }
+            
+            // Påbegyndte timer
+            int hours = course.DurationInMinutes / 60;
+            // Minuter i overskud.
+            double remaingMinutes = course.DurationInMinutes % 60;
+
+            if (remaingMinutes > 0) { return (hours + 1) * 875; }
+            else { return hours * 875; }
+        }
+
     }
 }

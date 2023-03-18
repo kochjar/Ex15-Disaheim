@@ -32,8 +32,6 @@ namespace Ex15_Disaheim
             Console.WriteLine(utility.GetValueOfCourse(c2));
             Console.WriteLine(utility.GetValueOfCourse(c3));
 
-
-
             controller.AddToList(b3);/*
             controller.AddToList(b2);
             controller.AddToList(b3);

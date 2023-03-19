@@ -10,11 +10,6 @@ namespace Ex15_Disaheim
     {
         public string ItemId { get; set; }
 
-/*        public Merchandise(string itemId)
-        {
-            this.ItemId = itemId;
-        }*/
-
         public override string ToString() {
             // Skal formatteres som "ItemId: 100"
             return $"ItemId: {this.ItemId}";

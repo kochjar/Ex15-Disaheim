@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ex15_Disaheim;
-
 
 namespace UtilityLib
 {
@@ -31,9 +29,9 @@ namespace UtilityLib
         }
 
         public double GetValueOfCourse(Course course)
-        {
+        {   
             if (course == null) { return 0; }
-            
+
             // Påbegyndte timer
             int hours = course.DurationInMinutes / 60;
             // Minuter i overskud.

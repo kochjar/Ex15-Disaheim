@@ -7,9 +7,9 @@ using UtilityLib;
 
 namespace Ex15_Disaheim
 {
-    internal class AmuletRepository
+    public class AmuletRepository
     {
-        private List<Amulet> amulets { get; set; }
+        private List<Amulet> amulets = new List<Amulet>();
 
         public void AddAmulet(Amulet amulet)
         {

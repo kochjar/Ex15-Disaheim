@@ -7,9 +7,9 @@ using UtilityLib;
 
 namespace Ex15_Disaheim
 {
-    internal class BookRepository
+    public class BookRepository
     {
-        private List<Book> books { get; set; }
+        private List<Book> books = new List<Book>();
 
         public void AddBook(Book book)
         {

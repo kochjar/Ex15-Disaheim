@@ -8,29 +8,28 @@ namespace Ex15_Disaheim
 {
     public class Controller
     {
-        public List<Book> Books { get; set; }
-        public List<Amulet> Amulets { get; set; }
-
-        public List<Course> Courses { get; set; }
+        private BookRepository _bookRepository;
+        private AmuletRepository _amuletRepository;
+        private CourseRepository _courseRepository;
 
         public Controller() {
-            Books = new List<Book>();
-            Amulets = new List<Amulet>();
-            Courses = new List<Course>();
+            _bookRepository = new BookRepository();
+            _amuletRepository= new AmuletRepository();
+            _courseRepository = new CourseRepository();
         }
 
         public void AddToList(Book book)
         {
-            Books.Add(book);
+            _bookRepository.AddBook(book);
         }
 
         public void AddToList(Amulet amulet) { 
-            Amulets.Add(amulet);
+            _amuletRepository.AddAmulet(amulet);
         }
 
         public void AddToList(Course course)
         {
-            Courses.Add(course);
+            _courseRepository.AddCourse(course);
         }
     }
 }

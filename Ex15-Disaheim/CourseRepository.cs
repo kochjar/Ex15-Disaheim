@@ -7,7 +7,7 @@ using UtilityLib;
 
 namespace Ex15_Disaheim
 {
-    internal class CourseRepository
+    public class CourseRepository
     {
         private List<Course> courses = new List<Course>();
 

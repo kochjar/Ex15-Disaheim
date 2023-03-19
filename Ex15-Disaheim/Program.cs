@@ -1,45 +1,50 @@
 ﻿
 using UtilityLib;
+using static System.Reflection.Metadata.BlobBuilder;
+
 namespace Ex15_Disaheim
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Level level = Level.low;
-            Console.Write(level);
+            Book b1, b2, b3;
+            Amulet a1, a2, a3;
+            Course c1, c2;
 
-            Book b1 = new Book("1");
-            Book b2 = new Book("2", "Falling in Love with Yourself");
-            Book b3 = new Book("3", "Spirits in the Night", 123.55);
+            CourseRepository courses;
+            BookRepository books;
+            AmuletRepository amulets;
+            // Arrange
+            b1 = new Book("1");
+            b2 = new Book("2", "Falling in Love with Yourself");
+            b3 = new Book("3", "Spirits in the Night", 123.55);
 
-            Amulet a1 = new Amulet("11");
-            Amulet a2 = new Amulet("12", Level.high);
-            Amulet a3 = new Amulet("13", Level.low, "Capricorn");
+            a1 = new Amulet("11");
+            a2 = new Amulet("12", Level.high);
+            a3 = new Amulet("13", Level.low, "Capricorn");
 
-            Controller controller = new Controller();
+            c1 = new Course("Eufori med røg");
+            c2 = new Course("Nuru Massage using Chia Oil", 157);
 
-            Course c1, c2, c3;
-            c1 = new Course("Spådomskunst for nybegyndere");
+            courses = new CourseRepository();
+            books = new BookRepository();
+            amulets = new AmuletRepository();
 
-            c2 = new Course("Magi – når videnskaben stopper", 157);
+            // Act
+            books.AddBook(b1);
+            books.AddBook(b2);
+            books.AddBook(b3);
 
-            c3 = new Course("Et indblik i Helleristning", 180);
+            amulets.AddAmulet(a1);
+            amulets.AddAmulet(a2);
+            amulets.AddAmulet(a3);
 
-            Utility utility = new Utility();
+            courses.AddCourse(c1);
+            courses.AddCourse(c2);
 
-            Console.WriteLine(utility.GetValueOfCourse(c1));
-            Console.WriteLine(utility.GetValueOfCourse(c2));
-            Console.WriteLine(utility.GetValueOfCourse(c3));
-
-            controller.AddToList(b3);/*
-            controller.AddToList(b2);
-            controller.AddToList(b3);
-
-            controller.AddToList(a1);
-            controller.AddToList(a2);
-            controller.AddToList(a3);*/
+            Console.WriteLine(books.GetBook("2"));
+            Console.WriteLine(b2);
         }
     }
 }

@@ -8,22 +8,15 @@ namespace Ex15_Disaheim
 {
     public class Controller
     {
-        private MerchandiseRepository _merchandiseRepository;
-        private CourseRepository _courseRepository;
+        private ValuableRepository _valuableRepository;
 
         public Controller() {
-            _merchandiseRepository= new MerchandiseRepository();
-            _courseRepository = new CourseRepository();
+            _valuableRepository = new ValuableRepository();
         }
 
-        public void AddToList(Merchandise merchandise)
+        public void AddToList(IValuable valuable)
         {
-            _merchandiseRepository.AddMerchandise(merchandise);
-        }
-
-        public void AddToList(Course course)
-        {
-            _courseRepository.AddCourse(course);
+            _valuableRepository.AddValuable(valuable);
         }
     }
 }

@@ -7,34 +7,39 @@ namespace Ex15_Disaheim
     {
         static void Main(string[] args)
         {
+            /*
             Book b1, b2, b3;
             Amulet a1, a2, a3;
             Course c1, c2;
-            CourseRepository courses;
-            MerchandiseRepository merchandises;
+            ValuableRepository vr1, vr2;
 
-            b1 = new Book("1");
-            b2 = new Book("2", "Falling in Love with Yourself");
-            b3 = new Book("3", "Spirits in the Night", 123.55);
-            a1 = new Amulet("11");
-            a2 = new Amulet("12", Level.high);
-            a3 = new Amulet("13", Level.low, "Capricorn");
-            c1 = new Course("Eufori med røg");
-            c2 = new Course("Nuru Massage using Chia Oil", 157);
-            courses = new CourseRepository();
-            merchandises = new MerchandiseRepository();
-            merchandises.AddMerchandise(b1);
-            merchandises.AddMerchandise(b2);
-            merchandises.AddMerchandise(b3);
-            Console.WriteLine(merchandises.GetTotalValue());
-            merchandises.AddMerchandise(a1);
-            merchandises.AddMerchandise(a2);
-            merchandises.AddMerchandise(a3);
-            courses.AddCourse(c1);
-            courses.AddCourse(c2);
+            b1 = new Book("No. B1");
+            b2 = new Book("No. B2", "Falling in Love with Yourself");
+            b3 = new Book("No. B3", "Spirits in the Night", 123.55);
+            a1 = new Amulet("No. A1");
+            a2 = new Amulet("No. A2", Level.high);
+            a3 = new Amulet("No. A3", Level.low, "Modern");
+            c1 = new Course("Basis kursus");
+            c2 = new Course("Kursus 2", 128);
 
-            Console.WriteLine(merchandises.GetTotalValue());
-            Console.ReadLine();
-        }
+            vr1 = new ValuableRepository();
+            vr1.AddValuable(b1);
+            vr1.AddValuable(a1);
+            vr1.AddValuable(b2);
+            vr1.AddValuable(a3);
+            vr1.AddValuable(c1);
+            vr1.AddValuable(b3);
+            vr1.AddValuable(a2);
+            vr1.AddValuable(c2);
+
+            vr1.Save();
+            */
+            /*
+            ValuableRepository vr1 = new ValuableRepository();
+            vr1.Load();
+
+            Console.WriteLine(vr1.GetValuable("No. B3"));
+            */
+            }
     }
 }
